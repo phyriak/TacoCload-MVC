@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: tacos.TacoCloudApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 13.108 s <<< FAILURE! - in tacos.TacoCloudApplicationTests
+contextLoads  Time elapsed: 0.001 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'liquibase' defined in class path resource [org/springframework/boot/autoconfigure/liquibase/LiquibaseAutoConfiguration$LiquibaseConfiguration.class]: Invocation of init method failed; nested exception is liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Próba nawiązania połączenia nie powiodła się.
+Caused by: liquibase.exception.DatabaseException: org.postgresql.util.PSQLException: Próba nawiązania połączenia nie powiodła się.
+Caused by: org.postgresql.util.PSQLException: Próba nawiązania połączenia nie powiodła się.
+Caused by: java.net.SocketTimeoutException: connect timed out
+
